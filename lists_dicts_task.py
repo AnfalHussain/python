@@ -56,8 +56,3 @@ if int(cv["age"]) >= 21 and int(cv["experience"]) >=1  and hasSwiftSkill == True
 else:
 	print ("you have been rejected,", cv["name"])	
 
-
-
-
-
-#you have been accepted, Kale Salad")
