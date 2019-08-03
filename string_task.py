@@ -8,15 +8,15 @@ print (" Start Below:")
 
 print("\n")
 
-time = raw_input("Number: ")
+time = input("Number: ")
 
-items = raw_input("Noun(plural): ")
+items = input("Noun(plural): ")
 
-name = raw_input("Name: ")
+name = input("Name: ")
 
-scream = raw_input("Any sentence: ")
+scream = input("Any sentence: ")
 
-action = raw_input("Verb: ")
+action = input("Verb: ")
 
 print("    It was",  str(time) ,"o'clock when I heard a knock at the door.")
 
