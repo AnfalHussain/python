@@ -3,12 +3,12 @@
 # Anfal Hussain
 
 
-FirstNum = raw_input("Enter the first number: ")
+FirstNum = input("Enter the first number: ")
 
-SecondNum = raw_input("Enter the second number: ")
+SecondNum = input("Enter the second number: ")
 
 
-ChooseOperation = raw_input("Choose the operation (+, -, /, *):")
+ChooseOperation = input("Choose the operation (+, -, /, *):")
 
 
 
