@@ -65,12 +65,12 @@ def calculate_age(year, month, day):
 
 
 
-UserYear = raw_input("Enter year of birth: ")
-UserMonth = raw_input("Enter month of birth: ")
-UserDay = raw_input("Enter day of birth: ")
+UserYear = input("Enter year of birth: ")
+UserMonth = input("Enter month of birth: ")
+UserDay = input("Enter day of birth: ")
 
-if ( check_birthdate(UserYear, UserMonth, UserDay ) == True ): # if true 
-	calculate_age(UserYear, UserMonth, UserDay )
+if ( check_birthdate( int(UserYear), int(UserMonth), int(UserDay) ) == True ): # if true 
+	calculate_age( int(UserYear), int(UserMonth), int(UserDay))
 
 else:
 	print ("The birthdate is invalid")	
