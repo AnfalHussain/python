@@ -2,8 +2,7 @@
 
 #Anfal Hussain 
 
-item_number = 1
-items_dictionary= {}
+items_list= []
 user_input = ""
 
 
@@ -15,8 +14,7 @@ while user_input != "done":
 		quantity = input ("quantity:")
 		price = float(quantity) * float(inital_price)
 
-		items_dictionary["item_number" + str(item_number) ] = [quantity, user_input, price ]
-		item_number += item_number
+		items_list.append({ "name": user_input,"price": str(price), "quantity": quantity})
 
 
 
@@ -28,11 +26,10 @@ print ("-------------------")
 
 
 total = 0.0
-for item in items_dictionary:
+for item in items_list:
 		#[quantity, user_input, price ]
-		print (items_dictionary[item][0],items_dictionary[item][1] , str( '{:0.3f}'.format(items_dictionary[item][2]) ) + "KD")
-
-		total = total +  float(items_dictionary[item][2])
+	print (item["quantity"],item["name"], str('{:0.3f}'.format( float(item["price"]) ) ) + "KD" )	
+	total = total +  float(item["price"])
 
 print ("-------------------")
 
